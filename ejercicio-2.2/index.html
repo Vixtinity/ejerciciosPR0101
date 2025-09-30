@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Preferencias con document.cookie - Marcos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestión de Cookies con JavaScript</h1>
+        <div id="status-display" class="status-message"></div>
+        <div id="preference-form" style="display: none;">
+            <h2>Selección de Preferencias de Cookies</h2>
+            <p>Selecciona los tipos de cookies deseas aceptar:</p>
+            
+            <div class="preference-box">
+                <label>
+                    <input type="checkbox" id="cookie-tecnica" checked disabled>
+                    **Cookie Técnica** (Necesaria para el funcionamiento)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="cookie-analitica">
+                    **Cookie Analítica** (Para medir el rendimiento)
+                </label><br>
+                <label>
+                    <input type="checkbox" id="cookie-publicidad">
+                    **Cookie Publicidad** (Para mostrar anuncios personalizados)
+                </label>
+            </div>
+            
+            <button onclick="guardarPreferencias()">Guardar Preferencias</button>
+        </div>
+        
+        <h2>Datos Actuales de Cookies (Inspecciona la pestaña Application/Almacenamiento)</h2>
+        <div id="cookie-data" class="preference-box">Cargando datos...</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

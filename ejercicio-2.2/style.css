@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #ffffffcc;
+    padding: 32px 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(60, 120, 180, 0.15);
+    border: 1px solid #b6c6e3;
+}
+h1 {
+    color: #2d5fa7;
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h2 {
+    color: #4e7cbf;
+    font-size: 1.3em;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+.preference-box {
+    background: #f7faff;
+    border: 1px solid #b6c6e3;
+    padding: 18px 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+label {
+    font-size: 1em;
+    color: #2d5fa7;
+    margin-bottom: 8px;
+    display: block;
+}
+input[type="checkbox"] {
+    accent-color: #4e7cbf;
+    margin-right: 8px;
+}
+button {
+    background: linear-gradient(90deg, #4e7cbf 0%, #2d5fa7 100%);
+    color: #fff;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(60, 120, 180, 0.10);
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+button:hover {
+    background: linear-gradient(90deg, #2d5fa7 0%, #4e7cbf 100%);
+}
+.status-message {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1em;
+    box-shadow: 0 2px 8px rgba(60, 120, 180, 0.07);
+}
+.status-info {
+    background: #eaf6ff;
+    border: 1px solid #b6c6e3;
+    color: #2d5fa7;
+}
+.status-success {
+    background: #e6fbe7;
+    border: 1px solid #7ed6a3;
+    color: #218c5b;
+}

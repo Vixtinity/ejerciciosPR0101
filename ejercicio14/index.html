@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Palíndromos - Ejercicio 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Palíndromos</h1>
+        <form id="form-palindromo">
+            <input type="text" id="input-palabra" placeholder="Escribe una palabra o frase" required>
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="./App.js"></script>
+    <script>
+        const form = document.getElementById('form-palindromo');
+        const input = document.getElementById('input-palabra');
+        const resultado = document.getElementById('resultado');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const texto = input.value;
+            if (texto.trim() === "") {
+                resultado.textContent = "Por favor, escribe algo.";
+                resultado.className = "error";
+                return;
+            }
+            if (esPalindromo(texto)) {
+                resultado.textContent = `"${texto}" es un palíndromo.`;
+                resultado.className = "success";
+            } else {
+                resultado.textContent = `"${texto}" no es un palíndromo.`;
+                resultado.className = "error";
+            }
+        });
+    </script>
+</body>
+</html>
