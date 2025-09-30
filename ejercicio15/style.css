@@ -1,0 +1,25 @@
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #f8fbff;
+    padding: 32px 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(60, 120, 180, 0.13);
+    border: 1px solid #b6c6e3;
+    text-align: center;
+}
+h1 {
+    color: #2d5fa7;
+    font-size: 1.7em;
+    margin-bottom: 18px;
+}
+p {
+    color: #4e7cbf;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+#output {
+    margin-top: 18px;
+    font-size: 1em;
+    color: #218c5b;
+}

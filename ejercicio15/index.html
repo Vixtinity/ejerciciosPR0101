@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Números Primos</h1>
+        <form id="form-primos">
+            <input type="number" id="input-limite" min="2" placeholder="Introduce un número mayor a 1" required>
+            <button type="submit">Buscar primos</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="./App.js"></script>
+    <script>
+        const form = document.getElementById('form-primos');
+        const input = document.getElementById('input-limite');
+        const output = document.getElementById('output');
+
+        // Redefinir encontrarPrimosHasta para mostrar en el HTML
+        function mostrarPrimos(limiteMaximo) {
+            limiteMaximo = parseInt(limiteMaximo, 10);
+            if (isNaN(limiteMaximo) || limiteMaximo < 2) {
+                output.innerHTML = '<span class="error">Introduce un número válido mayor a 1.</span>';
+                return;
+            }
+            const primosEncontrados = [];
+            for (let i = 2; i <= limiteMaximo; i++) {
+                if (esPrimo(i)) {
+                    primosEncontrados.push(i);
+                }
+            }
+            if (primosEncontrados.length > 0) {
+                output.innerHTML = `<strong>Primos entre 2 y ${limiteMaximo}:</strong><br>${primosEncontrados.join(', ')}`;
+            } else {
+                output.innerHTML = '<span class="error">No se encontraron números primos en ese rango.</span>';
+            }
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            mostrarPrimos(input.value);
+        });
+    </script>
+</body>
+</html>
