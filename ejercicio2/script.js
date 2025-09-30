@@ -1,3 +1,4 @@
+function ejercicio2() {
 var array100 = [];
 
 for (var i = 1; i<= 100; i++){
@@ -8,3 +9,4 @@ var resultado = array100.filter(numero => numero >= 10 && numero <= 20)
 
 console.log(resultado)
 console.table(resultado)
+}

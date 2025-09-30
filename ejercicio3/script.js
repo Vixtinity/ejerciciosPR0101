@@ -1,3 +1,4 @@
+function ejercicio3() {
 const persona = {
     nombre: "Ismael",
     edad: 20,
@@ -11,3 +12,4 @@ const persona = {
 
 console.log(persona)
 console.table(persona)
+}
