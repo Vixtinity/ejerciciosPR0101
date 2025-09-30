@@ -13,3 +13,5 @@ console.log(typeof(verdadero), verdadero);
 console.log(typeof(falso), falso);
 console.log(typeof(arrayprueba), arrayprueba);
 }
+
+ejercicio1();

@@ -10,3 +10,5 @@ var resultado = array100.filter(numero => numero >= 10 && numero <= 20)
 console.log(resultado)
 console.table(resultado)
 }
+
+ejercicio2();

@@ -13,3 +13,5 @@ const persona = {
 console.log(persona)
 console.table(persona)
 }
+
+ejercicio3();
