@@ -4,7 +4,7 @@ function ejercicio5() {
         numero1 = Number(numero1);
 
         var resultado = numero1 % 2;
-2
+        
         if(resultado == 0){
             alert("Par")
         } else {
