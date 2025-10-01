@@ -1,28 +1,18 @@
-/* Fondo con degradado */
-body {
-  margin: 0;
-  height: 100vh;
+/* Contenedor de botones */
+.button-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #74ebd5, #9face6);
-  font-family: Arial, sans-serif;
+  gap: 15px;
+  max-width: 800px;
+  padding: 20px;
 }
 
-/* Input */
-input{
-  width: 350px;
-  padding: 30px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  margin-bottom: 15px;
+/* Botón como enlace */
+a.button {
+  display: inline-block;
+  min-width: 120px;
   text-align: center;
-}
-
-/* Botón */
-.button {
   background: #4a90e2;
   color: white;
   border: none;
@@ -30,7 +20,12 @@ input{
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s ease;
+}
+
+a.button:hover {
+  background: #357ABD;
 }
 
 .button:hover {
