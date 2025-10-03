@@ -9,6 +9,7 @@ var resultado = array100.filter(numero => numero >= 10 && numero <= 20)
 
 console.log(resultado)
 console.table(resultado)
+document.getElementById("comprueba").innerText = "Comprueba la terminal";
 }
 
 ejercicio2();

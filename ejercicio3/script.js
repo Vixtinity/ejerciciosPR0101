@@ -12,6 +12,7 @@ const persona = {
 
 console.log(persona)
 console.table(persona)
+document.getElementById("comprueba").innerText = "Comprueba la terminal";
 }
 
 ejercicio3();

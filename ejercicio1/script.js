@@ -12,6 +12,7 @@ console.log(typeof(string), string);
 console.log(typeof(verdadero), verdadero);
 console.log(typeof(falso), falso);
 console.log(typeof(arrayprueba), arrayprueba);
+document.getElementById("comprueba").innerText = "Comprueba la terminal";
 }
 
 ejercicio1();
