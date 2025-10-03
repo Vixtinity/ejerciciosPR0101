@@ -32,3 +32,10 @@ input{
 .button:hover {
   background: #357ABD;
 }
+
+h4 {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 90%;
+  word-wrap: break-word;
+}
